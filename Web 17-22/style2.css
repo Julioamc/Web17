@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(images/bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;   
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  color: #FFFDFC;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:#FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+  display: none;
+}
+
+@media(max-width:991px) {
+  .menu {
+      padding: 30px;
+  }
+  .menu label {
+      display: initial;
+  }
+  .menu .navbar {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #1B293A;
+  }
+  .menu .navbar ul li {
+      width: 100%;
+  }
+  #menu:checked ~ .navbar {
+      display: block;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background-image: url(images/bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+form input,
+form textarea,
+form button {
+  margin-bottom: 10px;
+}
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #0056b3;
+}
+#topics-list {
+  display: flex;
+  flex-direction: column;
+}
+.topic {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.topic h2 {
+  margin-bottom: 10px;
+}
+.topic p {
+  color: #555;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
